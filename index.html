@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOX - Electronic Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #e6e2d3;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background-color: #f5f2e8;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: calc(100% - 4rem); /* 调整宽度，减去左右padding */
+            max-width: 400px;
+            margin: 2rem auto;
+            box-sizing: border-box;
+        }
+        .avatar-container {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #4a4a4a;
+        }
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            color: #3a3a3a;
+        }
+        .bio {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .link-item {
+            background-color: #e6e2d3;
+            border-radius: 5px;
+            padding: 0.75rem;
+            text-align: left;
+            text-decoration: none;
+            color: #4a4a4a;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        .link-item:hover {
+            background-color: #d1cdc0;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 1rem;
+        }
+        .inactive {
+            opacity: 0.5;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="avatar-container">
+            <img src="/api/placeholder/120/120" alt="Your Name" class="avatar">
+        </div>
+        <h1>敖羽</h1>
+        <p class="bio">敖羽字献之 / male / furry </p>
+        <div class="links">
+            <a href="https://x.com/AO_Xn_Drc" class="link-item">
+                <img src="images/X_logo_2024.svg" alt="Twitter icon" class="icon">
+                Twitter
+            </a>
+            <a href="https://bsky.app/profile/ao-x.bsky.social" class="link-item">
+                <img src="images/Bluesky_logo.svg" alt="Bluesky icon" class="icon">
+                Bluesky
+            </a>
+            <a href="#不存在链接🔗" class="link-item">
+                <img src="images/Blogger_logo.svg" alt="Blog icon" class="icon">
+                Blog
+            </a>
+            <a href="https://github.com/AOX081015" class="link-item">
+                <img src="images/Github_logo.svg" alt="GitHub icon" class="icon">
+                GitHub
+            </a>
+            <div class="link-item inactive">
+                <img src="/api/placeholder/24/24" alt="Empty icon" class="icon">
+                暂无
+            </div>
+            <div class="link-item inactive">
+                <img src="/api/placeholder/24/24" alt="Empty icon" class="icon">
+                暂无
+            </div>
+        </div>
+    </div>
+</body>
+</html>
